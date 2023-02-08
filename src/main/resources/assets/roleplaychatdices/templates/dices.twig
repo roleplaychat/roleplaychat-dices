@@ -1,0 +1,3 @@
+[Dice] {{ username | colorless }} бросает кости: {{ roll.getHumanReadable() }} = {% for part in result -%}
+{{part.getContent() | wrapColor(part.getMarker())}}
+{%- endfor %} = {{ final_result }}
