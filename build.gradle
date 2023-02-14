@@ -22,7 +22,10 @@ repositories {
 }
 
 dependencies {
-    implementation "net.xunto.roleplaychat:roleplaychat-core:2.0.0-a3"
+    compileOnly 'com.google.auto.service:auto-service-annotations:1.0'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0'
+
+    implementation "net.xunto.roleplaychat:roleplaychat-core:2.0.0-a5"
     implementation "org.jparsec:jparsec:3.0"
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
